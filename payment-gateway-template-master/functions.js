@@ -194,12 +194,3 @@ function resetUserData(initialConfig) {
 
 // Main app function to determine if the user is new or just logs into the app
 
-EcwidApp.getAppStorage('installed', function(value){
-
-	if (value !== null) {
-		getUserData();
-	}
-	else {
-		createUserData();
-	}
-})
